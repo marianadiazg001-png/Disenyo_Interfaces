@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(27, 27, 109);
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px white solid;
+    align-items: center;
+    padding: 5px;
+}
+
+header div {
+    color: azure;
+    font-size: 50px;
+}
+
+a {
+    color: burlywood;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;   /* si no caben, bajan a la línea siguiente */
+    gap: 10px;         /* separación entre tarjetas, filas y columnas */
+    padding: 20px;
+}
+
+.tarjetas {
+    width: 100px;
+    height: 30px;
+    color: rgb(27, 27, 109);
+    background-color: rgb(157, 228, 204);
+    border: 2px rgb(7, 7, 166) solid;
+    border-radius: 4px;
+    text-align: center;
+    align-content: center;
+}
