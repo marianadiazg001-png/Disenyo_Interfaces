@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: aqua;
+}
+
+.bienvenida audio {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 12px;
+}
+

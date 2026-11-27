@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(27, 27, 109);
+    background: linear-gradient(90deg, #ff5f6d 0%, #ffc371 50%, #2b5876 100%);
     margin: 0;
 }
 
@@ -21,29 +21,29 @@ header {
     height: 80px;
     display: flex;
     justify-content: space-between;
-    border: 1px white solid;
+    border: 1px rgb(8, 2, 2) solid;
     align-items: center;
     padding: 5px;
 }
 
 aside {
     grid-area: lateral;
-    border: 1px white solid;
+    border: 1px rgb(8, 2, 2) solid;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 main {
     grid-area: contenido;
-    border: 1px white solid;
+    border: 1px rgb(8, 2, 2) solid;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
 
 }
 
 footer {
     grid-area: pie;
-    border: 1px white solid;
+    border: 1px rgb(8, 2, 2) solid;
     color: azure;
     text-align: center;
     padding: 10px;
@@ -57,7 +57,7 @@ header div {
 }
 
 a {
-    color: rgb(170, 129, 76);
+    color: rgb(68, 24, 21);
 }
 
 aside nav {
