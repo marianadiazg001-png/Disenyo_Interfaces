@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    background-attachment: fixed;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera"
+        "hero     hero"
+        "lateral  contenido"
+        "pie      pie";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 80px 1fr auto;
+    min-height: 100vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+.hero   { 
+    grid-area: hero; 
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+header {
+    grid-area: cabecera;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px white solid;
+    align-items: center;
+    padding: 5px;
+}
+
+aside {
+    grid-area: lateral;
+    border: 1px white solid;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+main {
+    grid-area: contenido;
+    border: 1px white solid;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+footer {
+    grid-area: pie;
+    border: 1px white solid;
+    color: azure;
+    text-align: center;
+    padding: 10px;
+}
+
+header div {
+    color: azure;
+    font-size: 50px;
+}
+
+a {
+    color: rgb(170, 129, 76);
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    color: aqua;
+}
+
+.bienvenida audio {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 12px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: #130303;
+}
+
+.boton {
+    background-color: #130303;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #F03A47;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animar {
+    animation: aparecer 0.8s ease-out both;
+}
+
+/* .animar { animation: aparecer 0.3s ease both; }
+
+
+.animar { animation: aparecer 2s ease both; }
+
+
+.animar { animation: aparecer 0.8s linear both; }
+
+
+.animar { animation: aparecer 0.8s ease-in-out both; } */
